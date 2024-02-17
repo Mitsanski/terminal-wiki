@@ -1,4 +1,4 @@
-html, body, div#sidebar {
+html, body, #sidebar {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -9,23 +9,23 @@ html, body, div#sidebar {
     display: flex;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    color: black;
+    font-weight: bold;
 }
 
-/* First anchor element style (30%) */
 .container > a:first-child {
     flex: 0 0 30%; /* flex-grow, flex-shrink, flex-basis */
-    background-color: lightblue; /* Just for visualization */
     padding: 20px;
     border-right: 1px solid black;
 }
 
-/* Second and third anchor elements style (70% combined) */
 .container > a:nth-child(n+2) {
     flex: 1; /* Takes remaining space */
-    background-color: lightgreen; /* Just for visualization */
     padding: 20px;
     text-align: center;
     border-right: 1px solid black;
+    text-decoration: none;
+    color: black;
 }
 
 .container > a:last-child{
@@ -33,15 +33,37 @@ html, body, div#sidebar {
 }
 
 
-#sidebar { 
+#content { 
     display: flex;
-    flex-direction: column;
-    width: 300px;
+}
+
+#sidebar { 
+    width: 25%;
     border-right: 2px solid black;
 }
 
 #sidebar a{
+    display: flex;
     padding: 0.5em;
     padding-left: 0.7em;
     border-bottom: 2px solid black;
+}
+
+
+#mainContent  {
+    display: inline-block;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+
+.footer { 
+    background-color: gray;
+    text-align: center;
+    color: black;
+    padding: 1px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
