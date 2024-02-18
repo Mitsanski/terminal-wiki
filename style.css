@@ -36,6 +36,7 @@ html, body, #sidebar {
 
 #content { 
     display: flex;
+    flex-direction: row;
 }
 
 #sidebar { 
@@ -54,8 +55,8 @@ html, body, #sidebar {
 
 #mainContent  {
     display: inline-block;
-    flex-grow: 1;
     padding: 1em;
+    width: 70%;
 }
 
 

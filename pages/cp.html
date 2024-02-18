@@ -29,8 +29,69 @@
             <a href="cat.html">cat</a>
         </div>
         <div id="mainContent">
-            <h1>Welcome to the site</h1>
-            <p>Using the side bar so you learn about the Linux CLI.</p>
+            <h1>cp</h1>
+            <h3>NAME</h3>
+            <p>cp - copy files and directories</p>
+
+            <h3>SYPNOSIS</h3>
+            <p>cp [OPTION]... [-T] SOURCE DEST <br>
+                cp [OPTION]... SOURCE... DIRECTORY <br>
+                cp [OPTION]... -t DIRECTORY SOURCE...</p>
+
+            <h3>DESCRIPTION</h3>
+            <p>Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.</p>
+            <p> Mandatory arguments to long options are mandatory for short
+                options too.</p>
+
+            <span>-a, --archive</span>
+            <p>same as <span>-dR</span> <span>--preserve</span>=all</p>
+
+            <span>-b</span>
+            <p>like <span>--backup</span> but does not accept an argument</p>
+
+            <span>-d</span>
+            <p>same as <span>--no-dereference</span> <span>--preserve</span>=links</p>
+
+            <span> -f, --force</span>
+            <p>if an existing destination file cannot be opened, remove
+                it and try again (this option is ignored when the <span>-n</span>
+                option is also used)</p>
+
+            <span>-i, --interactive</span>
+            <p>prompt before overwrite (overrides a previous <span>-n</span> option)</p>
+
+            <span>-l, --link</span>
+            <p>hard link files instead of copying</p>
+
+            <span>-n, --no-clobber</span>
+            <p>do not overwrite an existing file (overrides a <span>-u</span> or
+                previous <span>-i</span> option). See also <span>--update</span></p>
+
+            <span>-p</span>
+            <p>same as <span>--preserve</span>=mode,ownership,timestamps</p>
+
+            <span>-R, -r, --recursive</span>
+            <p>copy directories recursively</p>
+
+            <span> -s, --symbolic-link</span>
+            <p>make symbolic links instead of copying</p>
+
+            <span>-t, --target-directory=DIRECTORY</span>
+            <p>copy all SOURCE arguments into DIRECTORY
+            </p>
+
+            <span>--update[=UPDATE]</span>
+            <p>control which existing files are updated;
+                UPDATE={all,none,older(default)}</p>
+
+            <span>-v, --verbose</span>
+            <p>explain what is being done</p>
+
+            <span>--version</span>
+            <p>output version information and exit
+            </p>
+
+
         </div>
     </div>
 

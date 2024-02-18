@@ -29,8 +29,78 @@
             <a href="cat.html">cat</a>
         </div>
         <div id="mainContent">
-            <h1>Welcome to the site</h1>
-            <p>Using the side bar so you learn about the Linux CLI.</p>
+            <h1>mv</h1>
+            <h3>NAME</h3>
+            <p>mv - move (rename) files</p>
+
+            <h3>SYPNOSIS</h3>
+            <p> mv [OPTION]... [-T] SOURCE DEST <br>
+                mv [OPTION]... SOURCE... DIRECTORY <br>
+                mv [OPTION]... -t DIRECTORY SOURCE...</p>
+
+            <h3>DESCRIPTION</h3>
+
+            <p>Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.</p>
+            <p>Mandatory arguments to long options are mandatory for short
+                options too.</p>
+
+            <span>--backup[=CONTROL]</span>
+            <p>make a backup of each existing destination file</p>
+
+            <span>-b</span>
+            <p>like <span>--backup</span> but does not accept an argument</p>
+
+            <span>--debug</span>
+            <p> explain how a file is copied. Implies <span>-v</span></p>
+
+            <span>-f, --force</span>
+            <p> do not prompt before overwriting</p>
+
+            <span>-i, --interactive</span>
+            <p>prompt before overwrite</p>
+
+            <span>-n, --no-clobber</span>
+            <p>do not overwrite an existing file</p>
+
+            <p> If you specify more than one of <span>-i</span>, <span>-f</span>, <span>-n</span>, only the final one
+                takes effect.</p>
+
+            <span>--no-copy</span>
+            <p>do not copy if renaming fails</p>
+
+            <span>--strip-trailing-slashes</span>
+            <p>remove any trailing slashes from each SOURCE argument</p>
+
+            <span>-S, --suffix=SUFFIX</span>
+            <p>override the usual backup suffix</p>
+
+            <span>-t, --target-directory=DIRECTORY</span>
+            <p>move all SOURCE arguments into DIRECTORY
+            </p>
+
+            <span>-T, --no-target-directory</span>
+            <p>treat DEST as a normal file</p>
+
+            <span> --update[=UPDATE]</span>
+            <p> control which existing files are updated;
+                UPDATE={all,none,older(default)}.</p>
+
+            <span>-u</span>
+            <p>equivalent to <span>--update</span>[=older]</p>
+
+            <span>-v, --verbose</span>
+            <p>explain what is being done</p>
+
+            <span>-Z, --context</span>
+            <p>set SELinux security context of destination file to
+                default type</p>
+
+            <span>--help</span>
+            <p>display this help and exit</p>
+
+            <span> --version</span>
+            <p>output version information and exit</p>
+
         </div>
     </div>
 

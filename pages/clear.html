@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal Commands Wiki - Clear</title>
+    <title>Terminal Commands Wiki - clear</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -29,8 +29,40 @@
             <a href="cat.html">cat</a>
         </div>
         <div id="mainContent">
-            <h1>Welcome to the site</h1>
-            <p>Using the side bar so you learn about the Linux CLI.</p>
+            <h1>clear</h1>
+            <h3>NAME</h3>
+            <p>@CLEAR@ - clear the terminal screen</p>
+
+            <h3>SYPNOSIS</h3>
+            <p>@CLEAR@ [-Ttype] [-V] [-x]</p>
+
+            <h3>DESCRIPTION</h3>
+            <p><span>@CLEAR@</span> clears your terminal's screen if this is possible,
+                including the terminal's scrollback buffer (if the extended “E3”
+                capability is defined). <span>@CLEAR@</span> looks in the environment for the
+                terminal type given by the environment variable <span>TERM</span>, and then in
+                the <span>terminfo</span> database to determine how to clear the screen.
+            </p>
+            <p><span>@CLEAR@</span> writes to the standard output. You can redirect the
+                standard output to a file (which prevents <span>@CLEAR@</span> from actually
+                clearing the screen), and later <span>cat</span> the file to the screen,
+                clearing it at that point.</p>
+
+            <h3>OPTIONS</h3>
+
+            <span>-T type</span>
+            <p>indicates the type of terminal. Normally this option is
+                unnecessary, because the default is taken from the
+                environment variable TERM. If -T is specified, then the
+                shell variables LINES and COLUMNS will also be ignored.</p>
+
+            <span>-V</span>
+            <p>reports the version of ncurses which was used in this
+                program, and exits.</p>
+
+            <span>-x</span>
+            <p>do not attempt to clear the terminal's scrollback buffer
+                using the extended “E3” capability.</p>
         </div>
     </div>
 

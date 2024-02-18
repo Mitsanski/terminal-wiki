@@ -29,8 +29,43 @@
             <a href="cat.html">cat</a>
         </div>
         <div id="mainContent">
-            <h1>Command</h1>
-            <p>Info</p>
+            <h1>cd</h1>
+            <h3>NAME</h3>
+            <p>cd - Change the shell working directory.</p>
+
+            <h3>SYPNOSIS</h3>
+            <p>cd [-L|[-P [-e]] [-@]] [dir]</p>
+
+            <h3>DESCRIPTION</h3>
+            <p>Change the shell working directory.</p>
+            <p>Change the current directory to DIR. The default DIR is the value of the
+                HOME shell variable.</p>
+            <p>The variable CDPATH defines the search path for the directory containing
+                DIR. Alternative directory names in CDPATH are separated by a colon (:).
+                A null directory name is the same as the current directory. If DIR begins
+                with a slash (/), then CDPATH is not used.</p>
+            <p>If the directory is not found, and the shell option `cdable_vars' is set,
+                the word is assumed to be a variable name. If that variable has a value,
+                its value is used for DIR.</p>
+
+            <span>-L</span>
+            <p>force symbolic links to be followed: resolve symbolic
+                links in DIR after processing instances of `..'</p>
+
+            <span>-P</span>
+            <p>use the physical directory structure without following
+                symbolic links: resolve symbolic links in DIR before
+                processing instances of `..'</p>
+
+            <span>-e</span>
+            <p>if the -P option is supplied, and the current working
+                directory cannot be determined successfully, exit with
+                a non-zero status</p>
+
+            <span>-@</span>
+            <p>on systems that support it, present a file with extended
+                attributes as a directory containing the file attributes</p>
+
         </div>
     </div>
 

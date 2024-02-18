@@ -29,8 +29,76 @@
             <a href="cat.html">cat</a>
         </div>
         <div id="mainContent">
-            <h1>Welcome to the site</h1>
-            <p>Using the side bar so you learn about the Linux CLI.</p>
+            <h1>rm</h1>
+            <h3>NAME</h3>
+            <p>rm - remove files or directories</p>
+
+            <h3>SYPNOSIS</h3>
+            <p>rm [OPTION]... [FILE]...</p>
+
+            <h3>DESCRIPTION</h3>
+
+            <p> This manual page documents the GNU version of <span>rm</span>. <span>rm</span> removes
+                each specified file. By default, it does not remove directories.</p>
+            <p>If the -I or --interactive=once option is given, and there are
+                more than three files or the -r, -R, or --recursive are given,
+                then rm prompts the user for whether to proceed with the entire
+                operation. If the response is not affirmative, the entire
+                command is aborted.</p>
+            <p>Otherwise, if a file is unwritable, standard input is a terminal,
+                and the -f or --force option is not given, or the -i or
+                --interactive=always option is given, rm prompts the user for
+                whether to remove the file. If the response is not affirmative,
+                the file is skipped.</p>
+
+
+            <h3>OPTIONS</h3>
+            <p>Remove (unlink) the FILE(s).</p>
+
+            <span>-f, --force</span>
+            <p>ignore nonexistent files and arguments, never prompt</p>
+
+            <span>-i</span>
+            <p>prompt before every removal</p>
+
+            <span>-I</span>
+            <p> prompt once before removing more than three files, or when
+                removing recursively; less intrusive than <span>-i</span>, while still
+                giving protection against most mistakes</p>
+
+            <span>--interactive[=WHEN]</span>
+            <p> prompt according to WHEN: never, once (<span>-I</span>), or always
+                (<span>-i</span>); without WHEN, prompt always
+            </p>
+
+            <span>--one-file-system</span>
+            <p> when removing a hierarchy recursively, skip any directory
+                that is on a file system different from that of the
+                corresponding command line argument</p>
+
+            <span>--no-preserve-root</span>
+            <p>do not treat '/' specially</p>
+
+            <span>--preserve-root[=all]</span>
+            <p>do not remove '/' (default); with 'all', reject any
+                command line argument on a separate device from its parent</p>
+
+            <span>-r, -R, --recursive</span>
+            <p>remove directories and their contents recursively
+            </p>
+
+            <span>-d, --dir</span>
+            <p>remove empty directories</p>
+
+            <span>-v, --verbose</span>
+            <p>explain what is being done</p>
+
+            <span>--help</span>
+            <p>display this help and exit</p>
+
+            <span>--version</span>
+            <p>output version information and exit
+            </p>
         </div>
     </div>
 
